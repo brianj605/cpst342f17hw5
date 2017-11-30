@@ -13,12 +13,12 @@ $(document).ready(function($){
 		// http://blog.revathskumar.com/2016/06/why-i-prefer-ajax-promise.html
 		$.ajax({
 			url: 'http://ellypost.com/courses/453/ajax-lab/actions.php',
-			dataType: 'jsonp',
+			//dataType: 'jsonp',
 			method: "POST",
 			
-			jsonpCallback: 'callbackFnc',
-			async: false,
-			crossDomain: true,
+			//jsonpCallback: 'callbackFnc',
+			//async: false,
+			//crossDomain: true,
 			
 			data: { 
 				'word-count': 3,
