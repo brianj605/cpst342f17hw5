@@ -1,2 +1,3 @@
-# cpst342f17hw5
-Homework Week 5
+# cpst342f17hw3
+Brian Johnson
+Week 5 Homework

@@ -1,0 +1,140 @@
+@import "reset.scss";
+
+
+/* For SCSS I referenced offical documentation
+   http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+   for 'for' loop syntax, color functions, etc.
+ */
+$body-color: #eee;
+$header-starting-size: 2rem;
+
+h1 {
+    color: #333;
+	font-size: $header-starting-size;
+	font-weight: 800;
+    font-family: 'Rokkitt', 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #666;
+	font-size: $header-starting-size*.75;
+	font-weight: 200;
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.headerFooterBase {
+    width: 100%;
+    color: darkblue;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+header {
+    background-color: darken($body-color, 20%);
+    padding: 20px;
+    @extend .headerFooterBase;
+}
+
+footer {
+    background-color: darken($body-color, 35%);
+    padding: 40px 20px 60px 20px;
+    @extend .headerFooterBase;
+}
+
+
+/* Based on starting example from sakai for week 2 for 4 column */
+ 
+.row {
+	margin: 20px 0;
+}
+.row::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.col {
+	float: left;
+	box-sizing: border-box;
+	padding: 0 20px;
+	display: inline-block;
+}
+
+/* https://stackoverflow.com/questions/13359419/calculate-a-percent-with-scss-sass */
+@for $i from 1 through 12 {
+	.col-#{$i}-12 {
+		width: percent($i/12);
+		@extend .col /* Extend .col so I don't have to put both classes on each column */
+	}
+}
+
+
+/* Other */
+body {
+    background: $body-color;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    min-height: 1000px;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 10px;
+}
+
+
+/* Prompt for name */
+.name-overlay {
+	display: none;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+@keyframes fade-to-clear {
+    from {
+		background-color: rgba(200,200,200,1);
+	}
+    to {
+		background-color: rgba(200,200,200,0);
+	}
+}
+
+.prompt-on .name-overlay {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation-name: fade-to-clear;
+	animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+body.prompt-on {
+	overflow: hidden;
+}
+
+
+/* https://css-tricks.com/centering-css-complete-guide/ */
+#formHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column; /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
+}
+
+#enterNameLabel {
+	padding-bottom: 5px;
+}

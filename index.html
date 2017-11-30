@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Homework Week 3 - Home</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CQuicksand%7CRokkitt" rel="stylesheet">
+</head>
+<body class="prompt-on">
+	<div class="name-overlay" id="nameOverlay">
+        <div id="formHolder">
+            <div id="enterNameLabel">Please enter your name:</div>
+            <div>
+                <form id="nameForm">
+                    <input type="text" id="nameTextbox" />
+                    <input type="submit" value="Enter"/>
+                </form>
+            </div>
+        </div>
+	</div>
+    <header>
+        CSPT 342 Homework 3
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Based on starting example from sakai for week 2 for 4 column -->
+        <div class="row">
+            <section class="col-1-12">&nbsp;</section>
+            <section class="col-4-12">
+                <h1 id="h1">Welcome, {{name}}</h1>
+            </section>
+            <section class="col-7-12">&nbsp;</section>
+        </div>
+
+        <div class="row">
+            <section class="col-2-12">&nbsp;</section>
+            <section class="col-8-12">
+                <h2>Introduction</h2>
+            </section>
+            <section class="col-2-12">&nbsp;</section>
+        </div>
+
+        <div class="row">
+            <section class="col-5-12">
+                <p>Welcome to my home page from the week 3 homework assigment from CPST 342.</p>
+                <p>Adding another paragraph to show the padding</p>
+                <p>Adding yet another paragraph to show the padding</p>
+            </section>
+            <section class="col-2-12">&nbsp;</section>
+            <section class="col-5-12">
+                <p>To learn about me please visit the 'About' page link below.</p>
+                <a href="about.html">About Page</a>
+            </section>
+
+    </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

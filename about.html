@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Week 2 - About with bootstrap grid</title>
+    <link href="3rdparty/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/about.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- Header based on http://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/ -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main style="padding-top: 3.25rem;">
+        <!-- Grid based on http://getbootstrap.com/docs/4.0/examples/grid/ -->
+        <div class="container">
+            <header>
+                <h1>About</h1>
+            </header>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Hello, I grew up in Chicago, Illinois</p>
+                    <p>Now I am taking CPST 342</p>
+                    <p>Below are some pictures I took in Australia</p>
+                </div>
+                <div class="col-lg-8">
+                    <img src="self.jpg" alt="Brian" style="width: 100%">
+                </div>
+            </div>
+
+            <!-- Bootstrap says no row is needed to wrap 100% -->
+            <img src="pictures/AuStLakeStClarePano.jpg" alt="Lake St Clair, Tasmania - Pano" />
+
+
+            <div class="row">
+                <div class="col-md-4"><img src="pictures/AyersRock.jpg" alt="Ayers Rock" style="width: 100%" /></div>
+                <div class="col-md-4"><img src="pictures/TwelveApostles.jpg" alt="Twelve Apostles" style="width: 100%" /></div>
+                <div class="col-md-4"><img src="pictures/BrunyIsland.jpg" alt="Bruny Island" style="width: 100%" /></div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
