@@ -1,5 +1,6 @@
 @import "reset.scss";
 
+/* G:\Source\Repos\cpst342f17hw5\css\sass>sass --watch style.scss:../main.css */
 
 /* For SCSS I referenced offical documentation
    http://sass-lang.com/documentation/file.SASS_REFERENCE.html
@@ -37,6 +38,8 @@ p {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
+
+
 header {
     background-color: darken($body-color, 20%);
     padding: 20px;
@@ -138,3 +141,5 @@ body.prompt-on {
 #enterNameLabel {
 	padding-bottom: 5px;
 }
+
+

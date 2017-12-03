@@ -45,6 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* G:\Source\Repos\cpst342f17hw5\css\sass>sass --watch style.scss:../main.css */
 /* For SCSS I referenced offical documentation
    http://sass-lang.com/documentation/file.SASS_REFERENCE.html
    for 'for' loop syntax, color functions, etc.

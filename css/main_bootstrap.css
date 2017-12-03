@@ -19,3 +19,14 @@ p {
   line-height: 1.5rem;
   margin-bottom: 30px;
 }
+
+/* Random words page */
+
+
+
+/* Contact page */
+
+#map {
+	height: 500px;
+	width: 100%;
+}
