@@ -76,6 +76,8 @@ $(document).ready(function($){
 				})
 				.fail(function(xhr) {
 					console.log('ajax error', xhr);
+					$("#outputError").text('Failed making AJAX call');
+
 				}
 			);
 		}
