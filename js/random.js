@@ -36,7 +36,7 @@ $(document).ready(function($){
 
 			// http://blog.revathskumar.com/2016/06/why-i-prefer-ajax-promise.html
 			$.ajax({
-				url: 'http://ellypost.com/courses/453/ajax-lab/actions.php',
+				url: 'https://ellypost.com/courses/453/ajax-lab/actions.php',
 				method: "POST",
 
 				data: { 
