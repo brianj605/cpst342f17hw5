@@ -33,13 +33,18 @@
             </header>
             <div class="row">
 
-				<form>
-					num words:<input type="text" id="num" /><br/>
-					<input type="button" value="Make AJAX call" id="generate" />
-
-
-				</form>
-
+				<div class="col-md-5">
+					<form>
+						Number of random words:<br/>
+						<input type="text" id="num" value="5" />
+						<input type="button" value="Make AJAX call" id="generate" />
+					</form>
+				</div>
+				<div class="col-md-7">
+					Output:<br/>
+					<div id="output"></div>
+					<div id="outputError"></div>
+				</div>
             </div>
             <div class="row">
             	<div id="output" style="font-weight: bold;">

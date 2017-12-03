@@ -21,7 +21,16 @@ p {
 }
 
 /* Random words page */
+#output {
+	font-weight: bold;
+	white-space: pre-line;
+}
 
+#outputError {
+	color: red;
+	font-weight: bold;
+	white-space: pre-line;
+}
 
 
 /* Contact page */
